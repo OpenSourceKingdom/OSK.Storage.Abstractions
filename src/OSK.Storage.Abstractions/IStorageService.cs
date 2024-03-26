@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace BlankStudios.Common.Storage.Abstractions
+namespace OSK.Storage.Abstractions
 {
     public interface IStorageService<TSaveOptions, TSearchOptions>
-        where TSaveOptions: class
+        where TSaveOptions : class
         where TSearchOptions : class
     {
         Task<IOutput<StorageMetaData>> SaveAsync<T>(T data, string fullStoragePath, TSaveOptions options = null, CancellationToken cancellationToken = default);
