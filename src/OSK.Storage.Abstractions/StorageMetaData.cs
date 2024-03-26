@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace BlankStudios.Common.Storage.Abstractions
+namespace OSK.Storage.Abstractions
 {
     public class StorageMetaData
     {

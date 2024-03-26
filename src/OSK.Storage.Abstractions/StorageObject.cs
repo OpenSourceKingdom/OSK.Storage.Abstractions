@@ -3,9 +3,9 @@ using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace BlankStudios.Common.Storage.Abstractions
+namespace OSK.Storage.Abstractions
 {
-    public abstract class StorageObject: IDisposable
+    public abstract class StorageObject : IDisposable
     {
         #region Variables
 
