@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<RepositoryUrl>https://github.com/OpenSourceKingdom/OSK.Storage.Abstractions</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<Description>A set of abstractions for saving and loading object data from storage in .NET.</Description>
+		<PackageTags>OpenSourceKingdom, OpenSource, Abstractions, Data, Object, Storage, Saving, Loading, Delete, Get, Serialize, Deserialize</PackageTags>
+		<Authors>BlankDev117</Authors>
+		<Title>OSK.Storage.Abstractions</Title>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="OSK.Functions.Outputs.Abstractions" Version="1.0.0" />
+	</ItemGroup>
+
+</Project>
