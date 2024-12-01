@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace OSK.Storage.Abstractions
 {
+    /// <summary>
+    /// A generic storage object that contains the raw data stream and the metadata for that object
+    /// </summary>
     public abstract class StorageObject : IDisposable
     {
         #region Variables
@@ -15,13 +18,17 @@ namespace OSK.Storage.Abstractions
 
         #endregion
 
-        #region Helpers
+        #region Constructors
 
         public StorageObject(Stream value, StorageMetaData metaData)
         {
             Value = value ?? throw new ArgumentNullException(nameof(value));
             MetaData = metaData ?? throw new ArgumentNullException(nameof(metaData));
         }
+
+        #endregion
+
+        #region Helpers
 
         public void Dispose()
         {
