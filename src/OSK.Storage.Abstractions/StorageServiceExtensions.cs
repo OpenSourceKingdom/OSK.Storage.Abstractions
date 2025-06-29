@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using OSK.Functions.Outputs.Abstractions;
@@ -31,10 +29,10 @@ namespace OSK.Storage.Abstractions
                 if (getResult.IsSuccessful)
                 {
                     var item = await getResult.Value.StreamAsAsync<TValue>(cancellationToken);
-                    return outputFactory.Success(item);
+                    return outputFactory.Succeed(item);
                 }
 
-                return getResult.AsType<TValue>();
+                return getResult.AsOutput<TValue>();
             }
             catch (Exception ex)
             {
