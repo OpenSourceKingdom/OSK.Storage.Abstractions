@@ -23,7 +23,7 @@ jobs:
         dotnet-version: 10.x
     - name: Restore dependencies
       run: >-
-        dotnet restore ./src/${{ github.event.repository.name }}.sln
+        dotnet restore ./src/${{ github.event.repository.name }}.slnx
     - name: Build
       run: dotnet build --no-restore ./src/${{ github.event.repository.name }}.sln
     - name: Test
