@@ -10,6 +10,7 @@
 		<Title>OSK.Storage.Abstractions</Title>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<LangVersion>12</LangVersion>
 		<NoWarn>CS1591</NoWarn>
 	</PropertyGroup>
 
@@ -19,7 +20,7 @@
 
 	<ItemGroup>
 		<None Include="..\..\README.md" Pack="true" PackagePath="\" />
-		<PackageReference Include="OSK.Functions.Outputs.Abstractions" Version="2.2.0" />
+		<PackageReference Include="OSK.Functions.Outputs" Version="3.0.0" />
 	</ItemGroup>
 
 </Project>
