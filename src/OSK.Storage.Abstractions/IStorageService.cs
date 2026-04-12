@@ -1,4 +1,4 @@
-﻿using OSK.Functions.Outputs.Models;
+﻿using OSK.Operations.Outputs.Models;
 using System.Threading;
 using System.Threading.Tasks;
 
